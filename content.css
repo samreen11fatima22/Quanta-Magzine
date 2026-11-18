@@ -1,0 +1,391 @@
+.section1 {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    display: grid;
+    
+    grid-template-columns: 3fr 1fr;
+    /* grid-template-rows: 1/10; */
+}
+.content{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 10px 50px;
+}
+
+#description {
+    width: 50%;
+    padding-left: 20px;
+    line-height: 2em;
+
+}
+#description span,p{
+    color: rgb(124, 124, 124);
+}
+#description span{
+    letter-spacing: 3px;
+    line-height: 2.5em;
+}
+#img1 {
+    padding-left: 80px;
+}
+#img1 img{
+    width: 400px;
+
+}
+.aside {
+    padding-left: 40px;
+}
+.aside h2 {
+    margin-bottom: 10px;
+}
+
+.aside #btn {
+    
+    padding-left: 15px;
+    padding-right: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    color: lightgray;
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+.aside h3{
+    margin-bottom: 20px;
+
+
+}
+.icon-links div {
+    /* padding-top: 20px; */
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    width: 200px;
+    display: flex;
+
+   
+    
+
+}
+.icon-links div i {
+    border: 5px solid orange;
+    border-radius: 50%;
+    /* height: 2em;
+    width: 2em; */
+    text-align: center;
+    padding-top: 5px;
+   padding: 10px;
+   justify-self: flex-start;
+    align-self: last baseline;
+
+
+}
+#X{
+    padding-right: 110px;
+    padding-left: 20px;
+}
+#F {
+    padding-right:65px ;
+}
+#R {
+    padding-right: 100px;
+}
+#Y {
+    
+     padding-right: 75px;
+}
+
+
+.icon-links div a {
+    padding-left: 20px;
+    padding-right: 50px;
+    border-bottom: 2px dotted black;
+    text-decoration: none;
+    color: rgb(128, 127, 127);
+    text-align: right;
+    font-weight: bolder;
+    justify-self: flex-end;
+    align-self: last baseline;
+    
+
+    
+
+}
+.section2 {
+    background-image: url(images/section2.webp);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 40px;
+}
+.section3 div{
+    width: 55vw;
+    /* height: 300px; */
+    margin: auto;
+    border: none;
+    line-height: 3em;
+    padding: 60px 100px;
+    border: 1px solid lightgray;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    background-color: white;
+    line-height: 3em;
+    box-shadow: 0px 0px 8px rgb(182, 179, 179) ;
+    margin-bottom: 50px;
+
+}
+.section3 div h1{
+    font-size: 3em;
+    font-family:  'Arial Narrow Bold', sans-serif;
+
+}
+.section3 div h1:hover{
+    color: grey;
+    
+}
+.section4{
+justify-content: space-between;
+width: 70vw;
+margin: auto;
+
+
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+}
+.box1 {
+    width: 50%;
+    padding-left: 100px;
+    padding-right: 0px;
+    line-height: 40px;
+    padding-bottom: 40px;
+    border-left: 1px solid lightgrey;
+
+
+    
+}
+
+.box-images {
+    width: 40%;
+    padding-left: 0px;
+    padding-bottom: 30px;
+}
+.box-images img{
+    width: 400px;
+    height: 300px;
+}
+.box1 span{
+    color: grey;
+    letter-spacing: 4px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 5px solid grey;
+}
+.box1 p{
+    color: grey;
+}
+
+/* Laptop / Tablet - 1024px se choti screen */
+@media (max-width: 1024px) {
+  .section1 {
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+    padding: 0 15px;
+  }
+
+  #img1 {
+    padding-left: 0;
+  }
+
+  #img1 img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  #description {
+    width: 48%;
+    padding-left: 10px;
+  }
+
+  .aside {
+    padding-left: 15px;
+  }
+
+  .section2 {
+    width: 100%;
+    height: 60vh;
+    background-position: center;
+  }
+
+  .section3 div {
+    width: 85%;
+    padding: 40px 30px;
+  }
+
+  .section3 div h1 {
+    font-size: 2.2em;
+    line-height: 1.2;
+  }
+
+  .section4 {
+    width: 90%;
+  }
+
+  .box1 {
+    padding-left: 30px;
+  }
+
+  .box-images img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+}
+
+/* Tablet / Mobile - 768px se choti screen */
+@media (max-width: 768px) {
+  .section1 {
+    grid-template-columns: 1fr; /* Aside neeche aa jayega */
+    gap: 30px;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  #img1 {
+    width: 100% !important;
+    padding-left: 0;
+  }
+
+  #img1 img {
+    width: 100% !important;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  #description {
+    width: 100%;
+    padding-left: 0;
+    line-height: 1.6em;
+  }
+
+  .aside {
+    padding-left: 0;
+    width: 100%;
+    border-top: 1px solid lightgray;
+    padding-top: 20px;
+  }
+
+  .aside #btn {
+    width: 100%;
+    padding-right: 15px;
+  }
+
+  .icon-links div {
+    width: 100%;
+  }
+
+  .section2 {
+    height: 40vh;
+    margin-top: 20px;
+  }
+
+  .section3 div {
+    width: 92%;
+    padding: 30px 20px;
+    bottom: 30px;
+    line-height: 1.8em;
+  }
+
+  .section3 div h1 {
+    font-size: 1.8em;
+  }
+
+  .section4 {
+    width: 92%;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  .box1 {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 0;
+    line-height: 1.6;
+    border-left: none;
+    border-top: 1px solid lightgrey;
+    padding-top: 20px;
+  }
+
+  .box-images {
+    width: 100%;
+    padding-left: 0;
+    order: -1; /* Image pehle, text baad me */
+  }
+
+  .box-images img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Small Mobile - 480px se choti screen */
+@media (max-width: 480px) {
+  .section1 {
+    margin-top: 15px;
+    padding: 0 12px;
+  }
+
+  #description h2 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  #description p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .section2 {
+    height: 30vh;
+  }
+
+  .section3 div {
+    padding: 25px 15px;
+    line-height: 1.6em;
+  }
+
+  .section3 div h1 {
+    font-size: 1.4em;
+  }
+
+  .section4 {
+    width: 94%;
+  }
+
+  .box1 h2 {
+    font-size: 19px;
+    line-height: 1.3;
+  }
+}

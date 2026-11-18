@@ -1,0 +1,179 @@
+.section5 {
+    width: 100%;
+    height: 40vh;
+    background-color:#2e2e2e;
+    color: white;
+}
+.section5 div{
+    width: 40%;
+    margin: auto;
+    padding-top: 10vh;
+    line-height: 3em;
+    
+
+}
+.section5 h2 {
+    font-size: 2.5em;
+
+}
+.section5 button {
+    padding-right: 4em;
+    padding-top: 1em;
+    text-align: center;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    font-size: 1em;
+    border: none;
+    background-color: lightgray;
+
+}
+footer {
+    width: 100vw;
+    background-color:black;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.8;
+    justify-content: space-between;
+    align-items: center;
+
+}
+footer p{
+   padding-right: 40px;
+}
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+
+}
+footer ul li {
+    list-style: none;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+/* Laptop / Tablet - 1024px se choti screen */
+@media (max-width: 1024px) {
+  .section5 {
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .section5 div {
+    width: 70%;
+    padding-top: 0;
+    line-height: 2em;
+  }
+
+  .section5 h2 {
+    font-size: 2em;
+  }
+
+  footer {
+    width: 100%;
+    padding: 20px;
+    gap: 15px;
+  }
+}
+
+/* Tablet / Mobile - 768px se choti screen */
+@media (max-width: 768px) {
+  .section5 {
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .section5 div {
+    width: 100%;
+    padding-top: 0;
+    line-height: 1.8em;
+  }
+
+  .section5 h2 {
+    font-size: 1.8em;
+    line-height: 1.2;
+  }
+
+  .section5 p {
+    font-size: 15px;
+  }
+
+  .section5 button {
+    width: 100%;
+    padding-right: 1em;
+    padding-left: 1em;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 15px;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 25px 15px;
+  }
+
+  footer .logo img {
+    border-right: none !important;
+    padding-right: 0 !important;
+  }
+
+  footer ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  footer ul li {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  footer p {
+    padding-right: 0;
+  }
+}
+
+/* Small Mobile - 480px se choti screen */
+@media (max-width: 480px) {
+  .section5 {
+    padding: 30px 15px;
+  }
+
+  .section5 h2 {
+    font-size: 1.5em;
+  }
+
+  .section5 p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .section5 button {
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  footer ul li a {
+    font-size: 14px;
+  }
+}
