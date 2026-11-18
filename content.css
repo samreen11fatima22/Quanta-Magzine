@@ -288,20 +288,10 @@ margin: auto;
   }
 
   .aside {
-    padding-left: 0;
-    width: 100%;
-    border-top: 1px solid lightgray;
-    padding-top: 20px;
+    display: none;
   }
 
-  .aside #btn {
-    width: 100%;
-    padding-right: 15px;
-  }
-
-  .icon-links div {
-    width: 100%;
-  }
+ 
 
   .section2 {
     height: 40vh;
